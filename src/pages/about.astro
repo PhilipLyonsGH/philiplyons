@@ -1,0 +1,24 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+---
+
+<html lang="en">
+<head>
+  <title>About Phil Lyons</title>
+</head>
+<body>
+  <Header />
+  <main class="page">
+    <p class="eyebrow">About</p>
+    <h1>Experience, curiosity and a genuine interest in people.</h1>
+    <p>I work with organisations to create photography and film that communicates clearly. Whether it is engineering, manufacturing, people or products, the aim is always the same: make something complex understandable and something ordinary memorable.</p>
+  </main>
+</body>
+</html>
+
+<style>
+.page { padding-top: 10rem; max-width: 900px; }
+.eyebrow { text-transform: uppercase; letter-spacing: .15em; }
+h1 { font-size: clamp(2.5rem, 5vw, 5rem); }
+</style>
