@@ -5,6 +5,7 @@
 html{font-family:'Instrument Sans','Helvetica Neue',Arial,sans-serif;color:#111;scroll-behavior:smooth}
 body{margin:0;line-height:1.65;background:#fff}
 a{color:inherit;text-decoration:none}
+a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
 img{max-width:100%;height:auto}
 
 h1,h2,h3{line-height:1.08;font-weight:500;letter-spacing:-.045em;margin-top:0}
