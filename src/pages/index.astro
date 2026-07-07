@@ -1,4 +1,6 @@
 ---
+import Hero from '../components/Hero.astro';
+import FeaturedWork from '../components/FeaturedWork.astro';
 import PortfolioGrid from '../components/PortfolioGrid.astro';
 
 const title = 'Phil Lyons | Commercial Photographer & Filmmaker';
@@ -10,19 +12,9 @@ const title = 'Phil Lyons | Commercial Photographer & Filmmaker';
     <meta name="description" content="Commercial photography and filmmaking for organisations that want to communicate clearly and authentically." />
   </head>
   <body>
+    <Hero />
     <main>
-      <h1>Visual stories that help organisations connect with people.</h1>
-      <p>
-        I create commercial photography and films that show what businesses do,
-        who they are, and why they matter.
-      </p>
-      <nav>
-        <a href="/photography">Photography</a>
-        <a href="/film">Film</a>
-        <a href="/about">About Phil</a>
-        <a href="/contact">Contact</a>
-      </nav>
-
+      <FeaturedWork />
       <PortfolioGrid />
     </main>
   </body>
