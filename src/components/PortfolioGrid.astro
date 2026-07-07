@@ -4,36 +4,33 @@
 <section id="work" class="work">
   <article class="feature">
     <div class="image-group">
-      <a href="#aerospace"><img src="/images/portfolio/eurofighters.jpg" alt="Aerospace photography" loading="lazy" /></a>
-      <div class="thumbs"><a href="#f15"><img src="/images/portfolio/f15.jpg" alt="Aviation photography" /></a><a href="#schipol"><img src="/images/portfolio/schipol.jpg" alt="Airport photography" /></a></div>
+      <a href="/projects/aerospace-technology"><img src="/images/portfolio/eurofighters.jpg" alt="Aerospace photography" loading="lazy" /></a>
+      <div class="thumbs"><img src="/images/portfolio/f15.jpg" alt="Aviation photography" /><img src="/images/portfolio/schipol.jpg" alt="Airport photography" /></div>
     </div>
-    <div class="copy"><p class="label">Aerospace & Technology</p><h2>Communicating complex industries clearly.</h2><p>From aviation to engineering, I create imagery that helps organisations explain capability, innovation and expertise.</p></div>
+    <div class="copy"><p class="label">Aerospace & advanced engineering</p><h2>Communicating complex capability clearly.</h2><p>Photography and film that helps technical organisations explain innovation, expertise and the value of what they do.</p></div>
   </article>
 
-  <article class="feature people">
-    <div class="copy"><p class="label">People & Culture</p><h2>Putting real people at the heart of organisations.</h2><p>Authentic workplace photography and corporate headshots that build trust, strengthen brands and show the human side of a business.</p></div>
-    <div class="image-group">
-      <a href="#amy"><img src="/images/portfolio/amy.jpg" alt="Corporate portrait photography" loading="lazy" /></a>
-      <div class="thumbs"><a href="#girlportrait"><img src="/images/portfolio/girlportrait.jpg" alt="Portrait photography" /></a><a href="#headshot"><img src="/images/portfolio/headshot.jpg" alt="Corporate headshot photography" /></a></div>
-    </div>
+  <article class="feature reverse">
+    <div class="copy"><p class="label">Industrial & commercial</p><h2>Showing the expertise behind the process.</h2><p>Authentic imagery of facilities, products and people that reveals the skill, precision and experience behind successful businesses.</p></div>
+    <div class="image-group"><img src="/images/portfolio/dewaltsaw.jpg" alt="Industrial product photography" loading="lazy" /><div class="thumbs"><img src="/images/portfolio/rallycar.jpg" alt="Commercial photography" /><img src="/images/portfolio/pulsarfashion.jpg" alt="Product photography" /></div></div>
   </article>
 
   <article class="feature">
-    <div class="image-group"><a href="#dewaltsaw"><img src="/images/portfolio/dewaltsaw.jpg" alt="Product photography" loading="lazy" /></a><div class="thumbs"><a href="#pulsar"><img src="/images/portfolio/pulsarfashion.jpg" alt="Fashion photography" /></a><a href="#rally"><img src="/images/portfolio/rallycar.jpg" alt="Automotive photography" /></a></div></div>
-    <div class="copy"><p class="label">Brands & Products</p><h2>Images that make products memorable.</h2><p>Commercial photography created to help brands communicate quality, performance and personality.</p></div>
+    <div class="image-group"><img src="/images/portfolio/amy.jpg" alt="Corporate portrait photography" loading="lazy" /></div>
+    <div class="copy"><p class="label">Corporate storytelling</p><h2>Putting people into the bigger picture.</h2><p>Portraits and workplace photography that support brands, websites and communications without resorting to staged corporate clichés.</p></div>
   </article>
 </section>
 
 <style>
 .work { padding: 3.5rem 0; }
-.feature { display:grid; grid-template-columns:1.8fr .7fr; gap:3rem; align-items:center; margin-bottom:4rem; }
-.people { grid-template-columns:.65fr 2fr; }
-.image-group img { width:100%; display:block; object-fit:cover; }
-.image-group > a img { aspect-ratio:5/3; }
+.feature { display:grid; grid-template-columns:1.8fr .7fr; gap:3rem; align-items:center; margin-bottom:5rem; }
+.reverse { grid-template-columns:.7fr 1.8fr; }
+.image-group img { width:100%; display:block; object-fit:cover; transition:transform .4s ease; }
+.image-group a img:hover { transform:scale(1.02); }
+.image-group > img, .image-group > a img { aspect-ratio:5/3; }
 .thumbs { display:grid; grid-template-columns:repeat(2,1fr); gap:.8rem; margin-top:.8rem; }
 .thumbs img { aspect-ratio:1/1; }
-.label { text-transform:uppercase; letter-spacing:.12em; font-size:.7rem; }
 h2 { font-size:clamp(1.6rem,2.5vw,2.5rem); }
 .copy p { font-size:.95rem; }
-@media(max-width:800px){.feature,.people{display:block}.copy{margin-top:2rem}}
+@media(max-width:800px){.feature,.reverse{display:block}.copy{margin-top:2rem}}
 </style>
