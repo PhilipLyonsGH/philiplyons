@@ -1,0 +1,32 @@
+---
+import { portfolio } from '../data/portfolio.js';
+---
+
+<section class="portfolio">
+  {portfolio.map((item) => (
+    <article class="card">
+      <img src={`/images/portfolio/${item.image}`} alt={item.title} loading="lazy" />
+      <h3>{item.title}</h3>
+      <p>{item.category}</p>
+    </article>
+  ))}
+</section>
+
+<style>
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+h3 {
+  margin-bottom: 0.25rem;
+}
+</style>
