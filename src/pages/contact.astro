@@ -1,0 +1,26 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+---
+
+<html lang="en">
+<head>
+  <title>Contact Phil Lyons</title>
+</head>
+<body>
+  <Header />
+  <main class="page">
+    <p class="eyebrow">Contact</p>
+    <h1>Have a project in mind?</h1>
+    <p>Whether you need commercial photography, film or aerial imagery, I’d be happy to discuss what you are trying to achieve.</p>
+    <a href="mailto:phil@example.com">Start a conversation</a>
+  </main>
+</body>
+</html>
+
+<style>
+.page { padding-top: 10rem; max-width: 900px; }
+.eyebrow { text-transform: uppercase; letter-spacing: .15em; }
+h1 { font-size: clamp(2.5rem, 5vw, 5rem); }
+a { display:inline-block; margin-top:2rem; padding:1rem 2rem; border:1px solid; }
+</style>
