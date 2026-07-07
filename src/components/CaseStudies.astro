@@ -6,8 +6,30 @@
   </div>
 
   <div class="projects">
-    <article><p class="tag">Aerospace & advanced engineering</p><h3>Making complex capability clear.</h3><p>Visual storytelling for organisations working in highly technical industries, where precision, credibility and trust are essential.</p><a href="#">View project</a></article>
-    <article><p class="tag">Industrial & manufacturing</p><h3>Showing the skill behind the process.</h3><p>Photography and film that reveal facilities, products and expertise without resorting to staged corporate clichés.</p><a href="#">View project</a></article>
+    <article id="aerospace">
+      <p class="tag">Aerospace & advanced engineering</p>
+      <h3>Making complex capability clear.</h3>
+      <p>Visual storytelling for organisations working in highly technical industries, where precision, credibility and trust are essential.</p>
+      <a href="#aerospace-detail">View project</a>
+    </article>
+
+    <article id="industrial">
+      <p class="tag">Industrial & manufacturing</p>
+      <h3>Showing the skill behind the process.</h3>
+      <p>Photography and film that reveal facilities, products and expertise without resorting to staged corporate clichés.</p>
+      <a href="#industrial-detail">View project</a>
+    </article>
+  </div>
+
+  <div class="details">
+    <div id="aerospace-detail">
+      <h3>Aerospace & advanced engineering</h3>
+      <p>Working with technical teams to understand complex subjects and create photography and film that communicates capability, innovation and expertise.</p>
+    </div>
+    <div id="industrial-detail">
+      <h3>Industrial & manufacturing</h3>
+      <p>Capturing the people, processes and environments that demonstrate quality, precision and the knowledge behind successful businesses.</p>
+    </div>
   </div>
 </section>
 
@@ -21,7 +43,9 @@ h2 { font-size:clamp(1.8rem,3vw,2.8rem); font-weight:400; }
 .projects { display:grid; grid-template-columns:repeat(2,1fr); gap:3rem; }
 article { border-top:1px solid rgba(255,255,255,.35); padding-top:1.5rem; }
 h3 { font-size:1.5rem; font-weight:400; }
-article p { font-size:1rem; }
+article p,.details p { font-size:1rem; }
 a { text-decoration:underline; }
-@media(max-width:800px){.projects{grid-template-columns:1fr}}
+.details { display:grid; grid-template-columns:repeat(2,1fr); gap:3rem; margin-top:4rem; padding-top:3rem; border-top:1px solid rgba(255,255,255,.2); }
+.details div { scroll-margin-top:100px; }
+@media(max-width:800px){.projects,.details{grid-template-columns:1fr}}
 </style>
