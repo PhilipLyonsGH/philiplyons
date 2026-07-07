@@ -1,32 +1,91 @@
 ---
-import { portfolio } from '../data/portfolio.js';
 ---
 
-<section class="portfolio">
-  {portfolio.map((item) => (
-    <article class="card">
-      <img src={`/images/portfolio/${item.image}`} alt={item.title} loading="lazy" />
-      <h3>{item.title}</h3>
-      <p>{item.category}</p>
-    </article>
-  ))}
+<section id="work" class="work">
+  <article class="feature">
+    <div class="image">
+      <img src="/images/portfolio/eurofighters.jpg" alt="Aerospace photography" loading="lazy" />
+    </div>
+    <div class="copy">
+      <p class="label">Aerospace & Technology</p>
+      <h2>Communicating complex industries clearly.</h2>
+      <p>From aviation to engineering, I create imagery that helps organisations explain capability, innovation and expertise.</p>
+    </div>
+  </article>
+
+  <article class="feature reverse">
+    <div class="image">
+      <img src="/images/portfolio/amy.jpg" alt="Corporate portrait photography" loading="lazy" />
+    </div>
+    <div class="copy">
+      <p class="label">People & Culture</p>
+      <h2>Putting real people at the heart of organisations.</h2>
+      <p>Authentic portraits and workplace photography that build trust and show the human side of a business.</p>
+    </div>
+  </article>
+
+  <article class="feature">
+    <div class="image">
+      <img src="/images/portfolio/dewaltsaw.jpg" alt="Product photography" loading="lazy" />
+    </div>
+    <div class="copy">
+      <p class="label">Brands & Products</p>
+      <h2>Images that make products memorable.</h2>
+      <p>Commercial photography created to help brands communicate quality, performance and personality.</p>
+    </div>
+  </article>
 </section>
 
 <style>
-.portfolio {
+.work {
+  padding: 8rem 0;
+}
+
+.feature {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 4rem;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.reverse {
+  grid-template-columns: 1fr 1.3fr;
+}
+
+.reverse .image {
+  order: 2;
 }
 
 img {
   width: 100%;
-  height: 320px;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
 }
 
-h3 {
-  margin-bottom: 0.25rem;
+.label {
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: .8rem;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin: 1rem 0;
+}
+
+@media (max-width: 800px) {
+  .feature,
+  .reverse {
+    display: block;
+  }
+
+  .reverse .image {
+    order: initial;
+  }
+
+  .copy {
+    margin-top: 2rem;
+  }
 }
 </style>
