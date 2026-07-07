@@ -17,9 +17,16 @@ import Footer from '../components/Footer.astro';
       </div>
       <div class="copy">
         <p class="eyebrow">About</p>
-        <h1>Experience, curiosity and a genuine interest in people.</h1>
-        <p>I create photography and film for organisations that need to communicate clearly. Whether it is engineering, manufacturing, technology, people or products, the goal is always the same: create imagery that tells a story and connects with an audience.</p>
-        <p>After many years working with businesses and brands, I understand that the best images are not just about cameras and lighting. They are about understanding what matters to an organisation and finding the visual story within it.</p>
+        <h1>Photography and film with a human perspective.</h1>
+        <p>
+          I help organisations tell their stories through photography, film and aerial imagery. The work might involve complex technology, a new product, a team of people or a brand that needs to stand out, but the principle is always the same: create something that people understand and remember.
+        </p>
+        <p>
+          I have spent many years working with businesses, from technical and industrial organisations to creative brands. That experience means I understand that successful imagery is not just about equipment, lighting or the latest visual trend. It starts with understanding the message, the audience and what the organisation is trying to achieve.
+        </p>
+        <p>
+          I’m curious by nature, which helps me find the details and moments that make a story worth telling. Whether I’m photographing people, products or machinery, my aim is to create images that feel authentic and have a purpose.
+        </p>
       </div>
     </section>
   </main>
@@ -29,10 +36,11 @@ import Footer from '../components/Footer.astro';
 
 <style>
 .page { padding-top: 10rem; }
-.about { display:grid; grid-template-columns:1fr 1.2fr; gap:5rem; align-items:center; }
+.about { display:grid; grid-template-columns:1fr 1.25fr; gap:5rem; align-items:start; }
 .portrait img { width:100%; aspect-ratio:3/4; object-fit:cover; }
-.eyebrow { text-transform:uppercase; letter-spacing:.15em; }
-h1 { font-size:clamp(2.5rem,5vw,5rem); }
-p { font-size:1.15rem; max-width:700px; }
+.eyebrow { text-transform:uppercase; letter-spacing:.15em; font-size:.8rem; }
+h1 { font-size:clamp(2.5rem,5vw,4.5rem); line-height:1.05; }
+p { font-size:1.15rem; max-width:720px; line-height:1.7; }
+.copy p + p { margin-top:1.5rem; }
 @media(max-width:800px){.about{display:block}.copy{margin-top:2rem}}
 </style>
