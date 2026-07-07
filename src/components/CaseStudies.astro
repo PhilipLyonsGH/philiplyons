@@ -1,26 +1,27 @@
-<section class="cases panel-dark">
+<section id="work" class="cases panel-dark">
   <div class="section-marker">03 / Selected work</div>
   <div class="intro">
-    <p class="label">Case studies</p>
-    <h2>Projects where the challenge was not just creating great images, but communicating something that mattered.</h2>
+    <p class="label">Selected projects</p>
+    <h2>Examples of visual storytelling that helps organisations communicate capability and expertise.</h2>
   </div>
 
   <div class="projects">
-    <article><p class="tag">Aerospace & advanced engineering</p><h3>Making complex capability clear.</h3><p>Visual storytelling for organisations working in highly technical industries, where precision, credibility and trust are essential.</p><a href="/projects/aerospace-technology">View project</a></article>
-    <article><p class="tag">Industrial & manufacturing</p><h3>Showing the skill behind the process.</h3><p>Photography and film that reveal the people, facilities and expertise behind products and services.</p><a href="/projects/industrial-manufacturing">View project</a></article>
+    <article><p class="tag">Aerospace & advanced engineering</p><h3>Making complex capability clear.</h3><p>Visual storytelling for organisations working in highly technical industries, where precision, credibility and trust are essential.</p><a href="#">View project</a></article>
+    <article><p class="tag">Industrial & manufacturing</p><h3>Showing the skill behind the process.</h3><p>Photography and film that reveal facilities, products and expertise without resorting to staged corporate clichés.</p><a href="#">View project</a></article>
   </div>
 </section>
 
 <style>
-.cases { margin:0 -3rem; padding:5rem max(3rem, calc((100vw - 1400px) / 2 + 3rem)); }
+.cases { width:100vw; margin-left:calc(50% - 50vw); padding:5rem max(3rem, calc((100vw - 1400px) / 2 + 3rem)); }
 .panel-dark { background:#161616; color:#fff; }
-.section-marker { font-size:.75rem; letter-spacing:.15em; opacity:.6; margin-bottom:2rem; }
-.intro { max-width:900px; margin-bottom:3rem; }
+.section-marker { font-size:.7rem; letter-spacing:.15em; opacity:.6; margin-bottom:1.5rem; }
+.intro { max-width:800px; margin-bottom:3rem; }
 .label,.tag { text-transform:uppercase; letter-spacing:.12em; font-size:.7rem; opacity:.7; }
-h2 { font-size:clamp(1.8rem,3vw,3rem); }
+h2 { font-size:clamp(1.8rem,3vw,2.8rem); font-weight:400; }
 .projects { display:grid; grid-template-columns:repeat(2,1fr); gap:3rem; }
 article { border-top:1px solid rgba(255,255,255,.35); padding-top:1.5rem; }
-h3 { font-size:1.7rem; }
+h3 { font-size:1.5rem; font-weight:400; }
+article p { font-size:1rem; }
 a { text-decoration:underline; }
-@media(max-width:800px){.projects{grid-template-columns:1fr}.cases{margin:0 -1.5rem;padding-left:1.5rem;padding-right:1.5rem}}
+@media(max-width:800px){.projects{grid-template-columns:1fr}}
 </style>
