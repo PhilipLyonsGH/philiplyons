@@ -1,5 +1,5 @@
 <section class="hero">
-  <div class="image"></div>
+  <img class="image" src="/images/portfolio/eurofighters.jpg" alt="Eurofighters" />
   <div class="overlay"></div>
   <div class="content">
     <p class="eyebrow">Commercial photography & film</p>
@@ -12,33 +12,28 @@
 <style>
 .hero {
   position: relative;
-  aspect-ratio: 16 / 9;
-  min-height: 650px;
-  display: flex;
-  align-items: flex-end;
+  overflow: hidden;
   background: #111;
   color: white;
-  overflow: hidden;
 }
 
 .image {
-  position: absolute;
-  inset: 0;
-  background-image: url('/images/portfolio/eurofighters.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(0,0,0,.78), rgba(0,0,0,.15));
+  background: linear-gradient(90deg, rgba(0,0,0,.72), rgba(0,0,0,.12));
 }
 
 .content {
-  position: relative;
+  position: absolute;
   z-index: 1;
+  left: 0;
+  bottom: 0;
   max-width: 950px;
   padding: 0 3rem 4rem;
 }
@@ -69,12 +64,8 @@ a {
 }
 
 @media(max-width:700px) {
-  .hero {
-    min-height: 700px;
-  }
-
   .content {
-    padding: 0 1.5rem 3rem;
+    padding: 0 1.5rem 2rem;
   }
 }
 </style>
