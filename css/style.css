@@ -1,57 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap');
 
 *{box-sizing:border-box}
+
 html{font-family:'Instrument Sans','Helvetica Neue',Arial,sans-serif;color:#111;scroll-behavior:smooth}
 body{margin:0;line-height:1.65;background:#fff}
 a{color:inherit;text-decoration:none}
+
 h1,h2,h3{line-height:1.08;font-weight:500;letter-spacing:-.045em;margin-top:0}
 p{max-width:720px}
+
 main{max-width:1400px;margin:auto;padding:0 3rem}
 
-.header{position:absolute;top:0;left:0;width:100%;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:2.2rem 3rem;color:white}
-.logo{font-weight:600;letter-spacing:.16em;font-size:.9rem}
-.header nav{display:flex;gap:2.5rem;text-transform:uppercase;font-size:.75rem;letter-spacing:.14em}
+.header{position:absolute;top:0;left:0;width:100%;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:2.5rem 3rem;color:white}
+.logo{font-weight:600;letter-spacing:.2em;font-size:.85rem}
+.header nav{display:flex;gap:2.8rem;text-transform:uppercase;font-size:.72rem;letter-spacing:.16em}
+.header nav a{opacity:.9;transition:.2s}
+.header nav a:hover{opacity:1}
 
-.hero{position:relative;min-height:90vh;overflow:hidden;background:#111;color:white;display:flex;align-items:flex-end}
+.hero{position:relative;min-height:92vh;overflow:hidden;background:#111;color:white;display:flex;align-items:flex-end}
 .hero .image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.78),rgba(0,0,0,.15))}
-.content{position:relative;z-index:1;max-width:1050px;padding:0 3rem 6rem}
-.content h1{font-size:clamp(3rem,5.8vw,6rem);max-width:1000px}
-.content p{font-size:1.25rem}
-.content a{display:inline-block;margin-top:1.5rem;padding:1rem 2rem;border:1px solid rgba(255,255,255,.8);transition:.2s}
-.content a:hover{background:white;color:#111}
+.overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.8),rgba(0,0,0,.25))}
+.content{position:relative;z-index:1;max-width:1100px;padding:0 3rem 6.5rem}
+.content h1{font-size:clamp(3rem,5.8vw,6.2rem);max-width:1050px}
+.content p{font-size:1.25rem;max-width:720px}
+.content a,.cta a{display:inline-block;margin-top:1.5rem;padding:1rem 2rem;border:1px solid rgba(255,255,255,.8);transition:.25s}
+.content a:hover,.cta a:hover{background:white;color:#111}
 
-.eyebrow,.label{font-size:.72rem;text-transform:uppercase;letter-spacing:.18em;color:#666;margin-bottom:1.5rem}
+.eyebrow,.label{font-size:.7rem;text-transform:uppercase;letter-spacing:.2em;color:#666;margin-bottom:1.5rem}
 .content .eyebrow{color:white}
 
-.intro,.capabilities{width:100vw;margin-left:calc(50% - 50vw);padding:7rem max(3rem,calc((100vw - 1400px)/2 + 3rem))}
-.intro{background:#f4f3ef}
-.intro h2,.capabilities h2{max-width:950px;font-size:clamp(2.3rem,4vw,4rem)}
+.intro,.services,.cta{width:100vw;margin-left:calc(50% - 50vw);padding:8rem max(3rem,calc((100vw - 1400px)/2 + 3rem))}
+.intro{background:#f3f1eb}
+.intro h1,.intro h2,.services h2,.cta h2{max-width:1000px;font-size:clamp(2.5rem,4.5vw,4.5rem)}
 
-.capabilities{background:#eceff0}
-.grid,.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:3rem;margin-top:4rem}
-.grid article,.cards article{border-top:1px solid rgba(17,17,17,.25);padding-top:1.5rem}
-.grid h3,.cards h3{font-size:1.4rem}
-
-.work{padding:5rem 0}
-.feature{display:grid;grid-template-columns:1.4fr .8fr;gap:4rem;align-items:center;margin-bottom:7rem}
-.reverse{grid-template-columns:.8fr 1.4fr}
+.work{padding:6rem 0}
+.feature{display:grid;grid-template-columns:1.4fr .8fr;gap:5rem;align-items:center;margin-bottom:8rem}
 .image-group img{width:100%;display:block;object-fit:cover}
 .thumbs{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:1rem}
 .thumbs img{aspect-ratio:1;object-fit:cover}
 
-.services{padding:2rem 0 7rem}
-.footer{padding:5rem 3rem 3rem;display:grid;grid-template-columns:2fr 1fr 1fr;gap:4rem;background:#111;color:white}
+.copy h2{font-size:clamp(2rem,3vw,3rem)}
+.services{background:#eceff0}
+.cta{background:#111;color:white}
+.cta h2{color:white}
+
+.footer{padding:5rem 3rem 3rem;display:grid;grid-template-columns:2fr 1fr;gap:4rem;background:#111;color:white}
 .footer .name{font-size:2.2rem}
 
 @media(max-width:800px){
 main{padding:0 1.5rem}
 .header{padding:1.5rem;position:absolute}
 .header nav{gap:1rem;font-size:.65rem}
-.hero{min-height:80vh}
-.content{padding:0 1.5rem 3rem}
+.hero{min-height:85vh}
+.content{padding:0 1.5rem 3.5rem}
 .content h1{font-size:2.8rem}
-.feature,.reverse,.grid,.cards,.footer{display:block}
-.feature{margin-bottom:4rem}
-.footer{padding:3rem 1.5rem}
+.content p{font-size:1.1rem}
+.feature{display:block;margin-bottom:4rem}
+.thumbs{gap:.75rem}
+.footer{display:block;padding:3rem 1.5rem}
+.intro,.services,.cta{padding:5rem 1.5rem}
 }
