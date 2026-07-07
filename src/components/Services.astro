@@ -1,0 +1,33 @@
+<section class="services">
+  <div class="heading">
+    <p class="label">What I do</p>
+    <h2>Visual stories for businesses that need more than stock imagery.</h2>
+  </div>
+
+  <div class="cards">
+    <article>
+      <h3>Commercial photography</h3>
+      <p>Campaign imagery, workplaces, products and people that help organisations present themselves with confidence.</p>
+    </article>
+    <article>
+      <h3>Corporate film</h3>
+      <p>Films that explain, engage and connect, from internal communications to customer-facing campaigns.</p>
+    </article>
+    <article>
+      <h3>Aerial & location work</h3>
+      <p>Drone and location photography that gives complex environments a clear visual perspective.</p>
+    </article>
+  </div>
+</section>
+
+<style>
+.services { padding: 3rem 0 6rem; }
+.heading { max-width: 850px; margin-bottom: 3rem; }
+.label { text-transform: uppercase; letter-spacing: .12em; font-size: .7rem; }
+h2 { font-size: clamp(1.8rem, 3vw, 3rem); }
+.cards { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; }
+article { border-top:1px solid currentColor; padding-top:1.2rem; }
+h3 { font-size:1.25rem; }
+p { line-height:1.6; }
+@media(max-width:800px){.cards{grid-template-columns:1fr}}
+</style>
