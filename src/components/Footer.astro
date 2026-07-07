@@ -1,0 +1,19 @@
+<footer class="footer">
+  <div>
+    <strong>Phil Lyons</strong>
+    <p>Commercial photography, film and aerial imagery for organisations.</p>
+  </div>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+  </nav>
+  <p class="copy">© {new Date().getFullYear()} Phil Lyons</p>
+</footer>
+
+<style>
+.footer { padding:4rem 3rem; display:grid; grid-template-columns:2fr 1fr 1fr; gap:2rem; border-top:1px solid #ddd; }
+nav { display:flex; flex-direction:column; gap:.5rem; }
+.copy { margin:0; }
+@media(max-width:700px){.footer{display:block}.footer > *{margin-bottom:2rem}}
+</style>
