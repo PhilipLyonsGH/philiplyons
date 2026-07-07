@@ -10,17 +10,34 @@ import Header from '../components/Header.astro';
 <body>
   <Header />
   <main class="page">
-    <p class="eyebrow">Contact</p>
-    <h1>Have a project in mind?</h1>
-    <p>Whether you need commercial photography, film or aerial imagery, I’d be happy to discuss what you are trying to achieve.</p>
-    <a href="mailto:phil@example.com">Start a conversation</a>
+    <section class="contact">
+      <p class="eyebrow">Contact</p>
+      <h1>Have a project that needs a clearer visual story?</h1>
+      <p>
+        Whether you need commercial photography, film or aerial imagery, I’d be happy to discuss what you are trying to achieve and how I can help.
+      </p>
+      <div class="services">
+        <span>Commercial photography</span>
+        <span>Corporate film</span>
+        <span>Aerial imagery</span>
+        <span>People & workplace photography</span>
+      </div>
+      <p>
+        Tell me a little about your project, your audience and what you want to communicate. We can work out the best approach from there.
+      </p>
+      <a href="/">Start a conversation</a>
+    </section>
   </main>
 </body>
 </html>
 
 <style>
-.page { padding-top: 10rem; max-width: 900px; }
-.eyebrow { text-transform: uppercase; letter-spacing: .15em; }
+.page { padding-top: 10rem; }
+.contact { max-width: 900px; }
+.eyebrow { text-transform: uppercase; letter-spacing: .15em; font-size: .8rem; }
 h1 { font-size: clamp(2.5rem, 5vw, 5rem); }
+p { font-size: 1.2rem; max-width: 750px; }
+.services { display:flex; flex-wrap:wrap; gap:.75rem; margin:2rem 0; }
+.services span { border:1px solid #ccc; padding:.75rem 1rem; }
 a { display:inline-block; margin-top:2rem; padding:1rem 2rem; border:1px solid; }
 </style>
