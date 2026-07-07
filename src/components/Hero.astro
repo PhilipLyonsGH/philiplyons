@@ -13,26 +13,29 @@
 .hero {
   position: relative;
   overflow: hidden;
+  min-height: 85vh;
   background: #111;
   color: white;
+  display: flex;
+  align-items: flex-end;
 }
 .image {
-  display: block;
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(0,0,0,.72), rgba(0,0,0,.12));
+  background: linear-gradient(90deg, rgba(0,0,0,.78), rgba(0,0,0,.2));
 }
 .content {
-  position: absolute;
+  position: relative;
   z-index: 1;
-  left: 0;
-  bottom: 0;
   max-width: 950px;
-  padding: 0 3rem 4rem;
+  padding: 0 3rem 5rem;
 }
 .eyebrow {
   text-transform: uppercase;
@@ -56,6 +59,7 @@ a {
   border: 1px solid white;
 }
 @media(max-width:700px) {
-  .content { padding: 0 1.5rem 2rem; }
+  .hero { min-height: 75vh; }
+  .content { padding: 0 1.5rem 2.5rem; }
 }
 </style>
