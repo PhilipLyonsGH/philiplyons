@@ -22,6 +22,7 @@
       <img src="/images/portfolio/amy.jpg" alt="Corporate portrait photography" loading="lazy" />
       <div class="thumbs">
         <img src="/images/portfolio/girlportrait.jpg" alt="Portrait photography" loading="lazy" />
+        <img src="/images/portfolio/headshot.jpg" alt="Professional headshot photography" loading="lazy" />
       </div>
     </div>
     <div class="copy">
@@ -48,14 +49,15 @@
 </section>
 
 <style>
-.work { padding: 8rem 0; }
-.feature { display:grid; grid-template-columns:1.3fr 1fr; gap:5rem; align-items:center; margin-bottom:8rem; }
-.reverse { grid-template-columns:1fr 1.3fr; }
+.work { padding: 5rem 0; }
+.feature { display:grid; grid-template-columns:1.5fr .8fr; gap:3.5rem; align-items:center; margin-bottom:5rem; }
+.reverse { grid-template-columns:1.5fr .8fr; }
 .reverse .image-group { order:2; }
-.image-group > img { width:100%; aspect-ratio:4/3; object-fit:cover; }
+.image-group > img { width:100%; aspect-ratio:5/3; object-fit:cover; }
 .thumbs { display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; margin-top:1rem; }
 .thumbs img { width:100%; aspect-ratio:1/1; object-fit:cover; }
-.label { text-transform:uppercase; letter-spacing:.12em; font-size:.8rem; }
-h2 { font-size:clamp(2rem,4vw,3.5rem); margin:1rem 0; }
+.label { text-transform:uppercase; letter-spacing:.12em; font-size:.75rem; }
+h2 { font-size:clamp(1.8rem,3vw,3rem); }
+.copy p { font-size:1rem; }
 @media(max-width:800px){.feature,.reverse{display:block}.reverse .image-group{order:initial}.copy{margin-top:2rem}}
 </style>
