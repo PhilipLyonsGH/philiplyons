@@ -1,29 +1,23 @@
-<section class="capabilities">
+<section class="capabilities panel-technical">
+  <div class="section-marker">02 / Capabilities</div>
   <p class="eyebrow">Where I add value</p>
   <h2>Visual communication for organisations that need to explain, demonstrate and inspire confidence.</h2>
 
   <div class="grid">
-    <article>
-      <h3>Industrial & technical</h3>
-      <p>Showing facilities, processes, people and expertise in sectors where accuracy and credibility matter.</p>
-    </article>
-    <article>
-      <h3>Corporate communications</h3>
-      <p>Creating photography and film that supports marketing, websites, presentations and stakeholder communications.</p>
-    </article>
-    <article>
-      <h3>Commercial storytelling</h3>
-      <p>Finding the human story behind products, services and organisations to create content people connect with.</p>
-    </article>
+    <article><h3>Industrial & technical</h3><p>Showing facilities, processes, people and expertise in sectors where accuracy and credibility matter.</p></article>
+    <article><h3>Corporate communications</h3><p>Creating photography and film that supports marketing, websites, presentations and stakeholder communications.</p></article>
+    <article><h3>Commercial storytelling</h3><p>Finding the human story behind products, services and organisations to create content people connect with.</p></article>
   </div>
 </section>
 
 <style>
-.capabilities { padding: 4rem 0; }
+.capabilities { margin:0 -3rem; padding:5rem max(3rem, calc((100vw - 1400px) / 2 + 3rem)); }
+.panel-technical { background:#eef1f3; }
+.section-marker { font-size:.75rem; letter-spacing:.15em; color:#666; margin-bottom:2rem; }
 .eyebrow { text-transform:uppercase; letter-spacing:.15em; font-size:.8rem; }
 h2 { max-width:900px; font-size:clamp(2rem,4vw,3.5rem); }
 .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; margin-top:3rem; }
-article { border-top:1px solid currentColor; padding-top:1rem; }
+article { border-top:1px solid rgba(17,17,17,.25); padding-top:1.5rem; }
 p { line-height:1.6; }
-@media(max-width:800px){.grid{grid-template-columns:1fr}}
+@media(max-width:800px){.grid{grid-template-columns:1fr}.capabilities{margin:0 -1.5rem;padding-left:1.5rem;padding-right:1.5rem}}
 </style>
