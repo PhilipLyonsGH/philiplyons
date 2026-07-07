@@ -1,4 +1,5 @@
 <section class="hero">
+  <div class="image"></div>
   <div class="overlay"></div>
   <div class="content">
     <p class="eyebrow">Commercial photography & film</p>
@@ -15,16 +16,24 @@
   align-items: flex-end;
   position: relative;
   padding: 4rem 3rem 7rem;
-  background-image: url('/images/portfolio/eurofighters.jpg');
-  background-size: cover;
-  background-position: center;
+  background: #111;
   color: white;
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/portfolio/eurofighters.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(0,0,0,.65), rgba(0,0,0,.2));
+  background: linear-gradient(90deg, rgba(0,0,0,.7), rgba(0,0,0,.25));
 }
 
 .content {
