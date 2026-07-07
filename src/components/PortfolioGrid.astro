@@ -3,8 +3,12 @@
 
 <section id="work" class="work">
   <article class="feature">
-    <div class="image">
+    <div class="image-group">
       <img src="/images/portfolio/eurofighters.jpg" alt="Aerospace photography" loading="lazy" />
+      <div class="thumbs">
+        <img src="/images/portfolio/f15.jpg" alt="Aviation photography" loading="lazy" />
+        <img src="/images/portfolio/schipol.jpg" alt="Airport photography" loading="lazy" />
+      </div>
     </div>
     <div class="copy">
       <p class="label">Aerospace & Technology</p>
@@ -14,8 +18,11 @@
   </article>
 
   <article class="feature reverse">
-    <div class="image">
+    <div class="image-group">
       <img src="/images/portfolio/amy.jpg" alt="Corporate portrait photography" loading="lazy" />
+      <div class="thumbs">
+        <img src="/images/portfolio/girlportrait.jpg" alt="Portrait photography" loading="lazy" />
+      </div>
     </div>
     <div class="copy">
       <p class="label">People & Culture</p>
@@ -25,8 +32,12 @@
   </article>
 
   <article class="feature">
-    <div class="image">
+    <div class="image-group">
       <img src="/images/portfolio/dewaltsaw.jpg" alt="Product photography" loading="lazy" />
+      <div class="thumbs">
+        <img src="/images/portfolio/pulsarfashion.jpg" alt="Fashion photography" loading="lazy" />
+        <img src="/images/portfolio/rallycar.jpg" alt="Automotive photography" loading="lazy" />
+      </div>
     </div>
     <div class="copy">
       <p class="label">Brands & Products</p>
@@ -37,55 +48,14 @@
 </section>
 
 <style>
-.work {
-  padding: 8rem 0;
-}
-
-.feature {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 5rem;
-  align-items: center;
-  margin-bottom: 8rem;
-}
-
-.reverse {
-  grid-template-columns: 1fr 1.3fr;
-}
-
-.reverse .image {
-  order: 2;
-}
-
-img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-}
-
-.label {
-  text-transform: uppercase;
-  letter-spacing: .12em;
-  font-size: .8rem;
-}
-
-h2 {
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  margin: 1rem 0;
-}
-
-@media (max-width: 800px) {
-  .feature,
-  .reverse {
-    display: block;
-  }
-
-  .reverse .image {
-    order: initial;
-  }
-
-  .copy {
-    margin-top: 2rem;
-  }
-}
+.work { padding: 8rem 0; }
+.feature { display:grid; grid-template-columns:1.3fr 1fr; gap:5rem; align-items:center; margin-bottom:8rem; }
+.reverse { grid-template-columns:1fr 1.3fr; }
+.reverse .image-group { order:2; }
+.image-group > img { width:100%; aspect-ratio:4/3; object-fit:cover; }
+.thumbs { display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; margin-top:1rem; }
+.thumbs img { width:100%; aspect-ratio:1/1; object-fit:cover; }
+.label { text-transform:uppercase; letter-spacing:.12em; font-size:.8rem; }
+h2 { font-size:clamp(2rem,4vw,3.5rem); margin:1rem 0; }
+@media(max-width:800px){.feature,.reverse{display:block}.reverse .image-group{order:initial}.copy{margin-top:2rem}}
 </style>
