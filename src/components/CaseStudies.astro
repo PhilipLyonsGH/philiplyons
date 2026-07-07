@@ -1,0 +1,33 @@
+<section class="cases">
+  <div class="intro">
+    <p class="label">Selected work</p>
+    <h2>Projects where the challenge was not just making something look good, but making it understood.</h2>
+  </div>
+
+  <div class="projects">
+    <article>
+      <p class="tag">Aerospace & technology</p>
+      <h3>Making complex capability clear.</h3>
+      <p>Visual storytelling for organisations working in highly technical industries, where trust and credibility matter.</p>
+      <a href="#">View project</a>
+    </article>
+    <article>
+      <p class="tag">People & culture</p>
+      <h3>Showing the people behind the business.</h3>
+      <p>Authentic workplace imagery that helps employees, customers and partners connect with an organisation.</p>
+      <a href="#">View project</a>
+    </article>
+  </div>
+</section>
+
+<style>
+.cases { padding: 2rem 0 6rem; }
+.intro { max-width:900px; margin-bottom:3rem; }
+.label,.tag { text-transform:uppercase; letter-spacing:.12em; font-size:.7rem; }
+h2 { font-size:clamp(1.8rem,3vw,3rem); }
+.projects { display:grid; grid-template-columns:repeat(2,1fr); gap:3rem; }
+article { border-top:1px solid currentColor; padding-top:1.5rem; }
+h3 { font-size:1.7rem; }
+a { text-decoration:underline; }
+@media(max-width:800px){.projects{grid-template-columns:1fr}}
+</style>
